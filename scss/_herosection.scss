@@ -1,0 +1,12 @@
+@import 'config';
+
+.hero {
+    height: 110vh;
+    width: 100%;
+    background-color: $color-four;  
+    
+    &-container {
+        margin: 0 2rem;
+        padding: 0 2rem;
+    }
+}

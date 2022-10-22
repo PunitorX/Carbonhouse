@@ -1,4 +1,5 @@
 @import 'config';
+@import 'herosection';
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -19,21 +20,21 @@ body {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            letter-spacing: $letter-space;
+            letter-spacing: $letter-spaceOne;
             gap: 2rem;
         }
 
         ul {
-            width:inherit;
-            height: inherit;
+            // height: inherit;
             display: flex;
             align-items: center;
-            padding: 0 4rem 0 0;
+            padding: 0 3rem 0 0;
             
 
             li {
-                padding: 0 12px;
+                padding: 0 8px;
                 list-style-type: none;
+                transition: all 0.3s ease-in;
             }
 
             .navbar-header {
@@ -42,8 +43,14 @@ body {
             }
 
             a {
+                padding: 0 4px;
                 color: $color-two;
                 text-decoration: none;
+            }
+
+            li:hover {
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.2);
             }
         }
 
@@ -52,25 +59,25 @@ body {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 2rem 0 3rem;
+            padding: 0 0 0 3rem;
             cursor: pointer;
             position: relative;
             
             input {
                 padding: 8px 24px;
-                width: 475px;
+                width: 550px;
                 border-radius: 25px;
                 border: none;
                 background-color: $color-five;
                 color: $color-one;
                 font-size: $fontSize-one;
                 font-family: $font-familyThree;
-                letter-spacing: $letter-space;
+                letter-spacing: $letter-spaceOne;
             }
 
             div {
                 position: absolute;
-                right: 10%;
+                right: 5%;
             }
         }
 
@@ -89,7 +96,7 @@ body {
                 padding-right: 1.4rem;
                 color: $color-one;
                 font-family: $font-familyThree;
-                letter-spacing: $letter-space;
+                letter-spacing: $letter-spaceOne;
             }
         }
     }
@@ -102,24 +109,47 @@ body {
             height: inherit;
             display: flex;
             justify-content: space-between;
+            padding: 0 2rem;
+            margin: 0 2rem;
 
             div {
+                height: 140px;
+                width: 15%;
                 color: $color-one;
-            }
-
-            ul {
-                width: 60%;
+                background-color: $color-containerOne;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
+                align-items: center;                   text-transform: uppercase;
+                letter-spacing: $letter-spaceTwo;
+                transform: translateY(-50px);
+                text-shadow: 0 5px 2px $color-two;
+                font-family: $font-familyOne;
+                
+                h1 {
+                    font-size: $fontSize-three;
+                }
+
+                span {
+                    font-size: $fontSize-two;
+                    font-style: italic;
+                }
+    
+            }
+            
+            ul {
+                width: 1200px;
+                padding-right: 4rem;
+                display: flex;
+                justify-content: space-between;
                 align-items: center;
                 list-style: none;
-                letter-spacing: $letter-space;
                 font-size: $fontSize-two;
-                margin-right: 3rem;
+                // margin-right: 3rem;
                 font-family: $font-familyThree;
 
                 li {
-                    
+                    width: auto;
+                    letter-spacing: $letter-spaceTwo;
                 }
 
                 a {

@@ -1,3 +1,13 @@
+.hero {
+  height: 110vh;
+  width: 100%;
+  background-color: #e5e5e5;
+}
+.hero-container {
+  margin: 0 2rem;
+  padding: 0 2rem;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -19,36 +29,40 @@ body .navbar .navbar-container {
   gap: 2rem;
 }
 body .navbar ul {
-  width: inherit;
-  height: inherit;
   display: flex;
   align-items: center;
-  padding: 0 4rem 0 0;
+  padding: 0 3rem 0 0;
 }
 body .navbar ul li {
-  padding: 0 12px;
+  padding: 0 8px;
   list-style-type: none;
+  transition: all 0.3s ease-in;
 }
 body .navbar ul .navbar-header {
   font-family: "Oswald", sans-serif;
   color: #de53f4;
 }
 body .navbar ul a {
+  padding: 0 4px;
   color: #000;
   text-decoration: none;
+}
+body .navbar ul li:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
 }
 body .navbar .navbar-search {
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem 0 3rem;
+  padding: 0 0 0 3rem;
   cursor: pointer;
   position: relative;
 }
 body .navbar .navbar-search input {
   padding: 8px 24px;
-  width: 475px;
+  width: 550px;
   border-radius: 25px;
   border: none;
   background-color: #e1e1e1;
@@ -59,7 +73,7 @@ body .navbar .navbar-search input {
 }
 body .navbar .navbar-search div {
   position: absolute;
-  right: 10%;
+  right: 5%;
 }
 body .navbar .navbar-login {
   height: inherit;
@@ -86,20 +100,43 @@ body .navbar-two div {
   height: inherit;
   display: flex;
   justify-content: space-between;
+  padding: 0 2rem;
+  margin: 0 2rem;
 }
 body .navbar-two div div {
+  height: 140px;
+  width: 15%;
   color: #fff;
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  transform: translateY(-50px);
+  text-shadow: 0 5px 2px #000;
+  font-family: "Lato", sans-serif;
+}
+body .navbar-two div div h1 {
+  font-size: 52px;
+}
+body .navbar-two div div span {
+  font-size: 24px;
+  font-style: italic;
 }
 body .navbar-two div ul {
-  width: 60%;
+  width: 1200px;
+  padding-right: 4rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
-  letter-spacing: 1.2px;
-  font-size: 26px;
-  margin-right: 3rem;
+  font-size: 24px;
   font-family: "Oswald", sans-serif;
+}
+body .navbar-two div ul li {
+  width: auto;
+  letter-spacing: 3.5px;
 }
 body .navbar-two div ul a {
   text-decoration: none;
