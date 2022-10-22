@@ -1,0 +1,39 @@
+/* First Nav Styles */
+
+.navbar{
+    height: 3rem;
+    width: 100%;
+    background-color: #fff;
+}
+
+.navbar-container {
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-menu {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-login {
+    height: inherit;
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.navbar-btn {
+    border: none;
+    background-color: pink;
+}

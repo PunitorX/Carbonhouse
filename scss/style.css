@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body .navbar {
+  height: 4rem;
+  width: 100%;
+  background-color: #fff;
+  font-size: 20px;
+}
+body .navbar .navbar-container {
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  letter-spacing: 1.2px;
+  gap: 2rem;
+}
+body .navbar ul {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem 0 0;
+}
+body .navbar ul li {
+  padding: 0 12px;
+  list-style-type: none;
+}
+body .navbar ul .navbar-header {
+  font-family: "Oswald", sans-serif;
+  color: #de53f4;
+}
+body .navbar ul a {
+  color: #000;
+  text-decoration: none;
+}
+body .navbar .navbar-search {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem 0 3rem;
+  cursor: pointer;
+  position: relative;
+}
+body .navbar .navbar-search input {
+  padding: 8px 24px;
+  width: 475px;
+  border-radius: 25px;
+  border: none;
+  background-color: #e1e1e1;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.2px;
+}
+body .navbar .navbar-search div {
+  position: absolute;
+  right: 10%;
+}
+body .navbar .navbar-login {
+  height: inherit;
+  background-color: #de53f4;
+  display: flex;
+  align-items: center;
+  padding: 0 4rem 0 2rem;
+}
+body .navbar .navbar-login button {
+  border: none;
+  cursor: pointer;
+  background-color: #de53f4;
+  font-size: 20px;
+  padding-right: 1.4rem;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.2px;
+}
+body .navbar-two {
+  background-color: #000;
+  height: 120px;
+}
+body .navbar-two div {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+body .navbar-two div div {
+  color: #fff;
+}
+body .navbar-two div ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  letter-spacing: 1.2px;
+  font-size: 26px;
+  margin-right: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+body .navbar-two div ul a {
+  text-decoration: none;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
