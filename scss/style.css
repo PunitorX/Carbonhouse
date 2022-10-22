@@ -3,9 +3,30 @@
   width: 100%;
   background-color: #e5e5e5;
 }
-.hero-container {
+.hero .hero-container {
   margin: 0 2rem;
-  padding: 0 2rem;
+  padding: 2rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.hero .hero-container .hero-top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #000;
+}
+.hero .hero-container .hero-top .hero-left {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.4px;
+  font-size: 32px;
+}
+.hero .hero-container .hero-top .hero-right {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-container .hero-bottom {
+  padding-top: 2rem;
 }
 
 *, *::before, *::after {
@@ -25,7 +46,7 @@ body .navbar .navbar-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
   gap: 2rem;
 }
 body .navbar ul {
@@ -69,7 +90,7 @@ body .navbar .navbar-search input {
   color: #fff;
   font-size: 20px;
   font-family: "Oswald", sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
 }
 body .navbar .navbar-search div {
   position: absolute;
@@ -90,7 +111,7 @@ body .navbar .navbar-login button {
   padding-right: 1.4rem;
   color: #fff;
   font-family: "Oswald", sans-serif;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.4px;
 }
 body .navbar-two {
   background-color: #000;

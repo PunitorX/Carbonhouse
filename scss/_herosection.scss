@@ -3,10 +3,35 @@
 .hero {
     height: 110vh;
     width: 100%;
-    background-color: $color-four;  
+    background-color: $color-four; 
     
-    &-container {
+    .hero-container {
         margin: 0 2rem;
-        padding: 0 2rem;
+        padding: 2rem 2rem 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid $color-two;
+
+            .hero-left {
+                text-transform: uppercase;
+                font-family: $font-familyThree;
+                letter-spacing: $letter-spaceOne;
+                font-size: $fontSize-four;
+            }
+
+            .hero-right {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .hero-bottom {
+            padding-top: 2rem;
+        }
     }
 }
