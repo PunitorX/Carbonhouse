@@ -25,6 +25,10 @@
   display: flex;
   align-items: center;
 }
+.hero .hero-container .hero-top .hero-right .hero-btn {
+  padding: 0 1rem;
+  cursor: pointer;
+}
 .hero .hero-container .hero-bottom {
   padding-top: 2rem;
 }
@@ -113,6 +117,10 @@ body .navbar .navbar-login button {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.4px;
 }
+body .navbar .navbar-login button:hover {
+  transition: all 0.3s ease;
+  color: #000;
+}
 body .navbar-two {
   background-color: #000;
   height: 120px;
@@ -144,6 +152,7 @@ body .navbar-two div div h1 {
 body .navbar-two div div span {
   font-size: 24px;
   font-style: italic;
+  font-weight: 900;
 }
 body .navbar-two div ul {
   width: 1200px;
@@ -162,4 +171,8 @@ body .navbar-two div ul li {
 body .navbar-two div ul a {
   text-decoration: none;
   color: #fff;
+}
+body .navbar-two div ul a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #de53f4;
 }/*# sourceMappingURL=style.css.map */

@@ -98,6 +98,11 @@ body {
                 font-family: $font-familyThree;
                 letter-spacing: $letter-spaceOne;
             }
+
+            button:hover {
+                transition: all 0.3s ease;
+                color: $color-two;
+            }
         }
     }
 
@@ -125,6 +130,7 @@ body {
                 text-shadow: 0 5px 2px $color-two;
                 font-family: $font-familyOne;
                 
+                
                 h1 {
                     font-size: $fontSize-three;
                 }
@@ -132,6 +138,7 @@ body {
                 span {
                     font-size: $fontSize-two;
                     font-style: italic;
+                    font-weight: 900;
                 }
     
             }
@@ -155,6 +162,11 @@ body {
                 a {
                     text-decoration: none;
                     color: $color-one;
+                }
+
+                a:hover {
+                    transition: all 0.2s ease-in-out;
+                    color: $color-three;
                 }
             }
         }

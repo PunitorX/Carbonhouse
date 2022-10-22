@@ -1,4 +1,5 @@
 @import 'config';
+@import 'card';
 
 .hero {
     height: 110vh;
@@ -27,6 +28,11 @@
             .hero-right {
                 display: flex;
                 align-items: center;
+
+                .hero-btn {
+                    padding: 0 1rem;
+                    cursor: pointer;
+                }
             }
         }
 
