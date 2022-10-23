@@ -1,5 +1,5 @@
 .hero {
-  height: 110vh;
+  height: auto;
   width: 100%;
   background-color: #e5e5e5;
 }
@@ -31,6 +31,62 @@
 }
 .hero .hero-container .hero-bottom {
   padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero .hero-container .hero-bottom .hero-card {
+  color: #de53f4;
+  width: 550px;
+  font-family: "Oswald", sans-serif;
+  margin: 0.5rem 0.5rem;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-img {
+  height: auto;
+  text-transform: uppercase;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-img img {
+  width: 550px;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-event {
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-event .hero-day {
+  background-color: #2e2e2e;
+  height: 50px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-7px);
+}
+.hero .hero-container .hero-bottom .hero-card .hero-person {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-person .hero-name {
+  font-size: 30px;
+  letter-spacing: 3.5px;
+  padding-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-person .hero-tour {
+  font-size: 18px;
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  color: #000;
+  letter-spacing: 1.4px;
+  font-weight: 600;
 }
 
 *, *::before, *::after {

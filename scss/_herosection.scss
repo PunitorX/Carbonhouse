@@ -1,8 +1,8 @@
 @import 'config';
-@import 'card';
+// @import 'card';
 
 .hero {
-    height: 110vh;
+    height: auto;
     width: 100%;
     background-color: $color-four; 
     
@@ -38,6 +38,75 @@
 
         .hero-bottom {
             padding-top: 2rem;
+            display: flex;
+            justify-content: center;    
+            flex-wrap: wrap;
+
+            .hero-card {
+                color: $color-three;
+                width: 550px;
+                font-family: $font-familyThree; 
+                margin: .5rem .5rem;
+
+                .hero-img {
+                    height: auto;
+                    text-transform: uppercase;
+                    
+                    img {
+                        // height: auto;
+                        width: 550px;
+                        // object-fit: contain;
+                    }
+                }
+
+                .hero-event {
+                    height: 50px;
+                    background-color: $color-two; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // padding-top: ;
+                    padding-left: 1.5rem;
+                    font-size: $fontSize-five;
+                    text-transform: uppercase;
+                    letter-spacing: $letter-spaceOne;
+
+                    .hero-day {
+                        background-color: $color-containerOne;
+                        height: 50px;
+                        width: 110px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transform: translateY(-7px);
+                        
+                    }
+
+                }
+
+                .hero-person {
+                    background-color:  $color-one;
+                    text-align: center;
+                    padding: 2rem;
+
+                    .hero-name {
+                        font-size: 30px;
+                        letter-spacing: $letter-spaceTwo;
+                        padding-bottom: 4px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+
+                    .hero-tour {
+                        font-size: $fontSize-five;
+                        font-style: italic;
+                        font-family: $font-familyTwo;
+                        color: $color-two;
+                        letter-spacing: $letter-spaceOne;
+                        font-weight: 600;
+                    }
+                }
+            }
         }
     }
 }
