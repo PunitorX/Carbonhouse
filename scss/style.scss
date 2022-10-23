@@ -64,6 +64,7 @@ body {
             cursor: pointer;
             position: relative;
             
+            
             input {
                 padding: 8px 24px;
                 width: 550px;
@@ -74,6 +75,8 @@ body {
                 font-size: $fontSize-one;
                 font-family: $font-familyThree;
                 letter-spacing: $letter-spaceOne;
+                outline: none;
+                color: $color-two;
             }
 
             div {
@@ -87,7 +90,7 @@ body {
             background-color: $color-three;
             display: flex;
             align-items: center;
-            padding: 0 4rem 0 2rem;
+            padding: 0 5rem 0 1rem;
             
             button {
                 border: none;
@@ -115,44 +118,50 @@ body {
             height: inherit;
             display: flex;
             justify-content: space-between;
-            padding: 0 2rem;
-            margin: 0 2rem;
+            margin: 0 0 0 80px;
+            // padding: 0 44px;
+            // padding-left: 40px;
 
             div {
                 height: 140px;
-                width: 15%;
+                width: 290px;
                 color: $color-one;
                 background-color: $color-containerOne;
                 display: flex;
                 justify-content: center;
-                align-items: center;                   text-transform: uppercase;
+                align-items: center;                   
+                text-transform: uppercase;
                 letter-spacing: $letter-spaceTwo;
                 transform: translateY(-50px);
                 text-shadow: 0 5px 2px $color-two;
                 font-family: $font-familyOne;
+                margin-left: 0;
                 
                 
                 h1 {
                     font-size: $fontSize-three;
+                    width: 100%;
+                    text-align: center;
                 }
 
                 span {
-                    font-size: $fontSize-two;
+                    font-size: $fontSize-four;
                     font-style: italic;
-                    font-weight: 900;
+                    font-family: $font-familyThree;
+                    font-weight: bold;
                 }
     
             }
             
             ul {
-                width: 1200px;
-                padding-right: 4rem;
+                width: 1235px;
+                padding-right: 5rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 list-style: none;
                 font-size: $fontSize-two;
-                // margin-right: 3rem;
+                margin-right: 2rem;
                 font-family: $font-familyThree;
 
                 li {

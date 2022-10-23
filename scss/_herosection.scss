@@ -7,8 +7,8 @@
     background-color: $color-four; 
     
     .hero-container {
-        margin: 0 2rem;
-        padding: 2rem 2rem 3rem 2rem;
+        margin: 0 2.5rem;
+        padding: 2rem 2rem 4rem 2rem;
         display: flex;
         flex-direction: column;
 
@@ -16,13 +16,15 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 2rem;
+            margin: 0 9px;
             border-bottom: 2px solid $color-two;
+            bottom: 0;
 
             .hero-left {
                 text-transform: uppercase;
                 font-family: $font-familyThree;
-                letter-spacing: $letter-spaceOne;
-                font-size: $fontSize-four;
+                letter-spacing: $letter-spaceTwo;
+                font-size: $fontSize-four;           
             }
 
             .hero-right {
@@ -36,27 +38,63 @@
             }
         }
 
+        
+
         .hero-bottom {
             padding-top: 2rem;
             display: flex;
             justify-content: center;    
             flex-wrap: wrap;
+            width: 100%;
 
             .hero-card {
                 color: $color-three;
-                width: 550px;
+                width: 570px;
                 font-family: $font-familyThree; 
                 margin: .5rem .5rem;
 
+                .hero-overlay {
+                    position: absolute; 
+                    width: 100%;
+                    height: inherit;
+                    transition: .4s ease;
+                    opacity: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;    
+                    
+                    .hero-btn {
+                        // z-index: 1;
+                        padding: 1rem 4rem;
+                        cursor: pointer;
+                        opacity:1;
+                        font-size: $fontSize-one;
+                        letter-spacing: $letter-spaceTwo;
+                        font-family: $font-familyOne;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: $color-three;
+                        border: 2px solid $color-three;
+                        background-color: $color-containerOne;
+                    }
+                }
+
+                .hero-overlay:hover {
+                    opacity: .6;
+                    background-color: $color-one;
+                }
+                
+
                 .hero-img {
-                    height: auto;
+                    height: 500px;
                     text-transform: uppercase;
+                    position: relative;
+                    transition: .5s ease;
                     
                     img {
-                        // height: auto;
-                        width: 550px;
-                        // object-fit: contain;
-                    }
+                        height: 100%;
+                        width: 570px; 
+                    }   
                 }
 
                 .hero-event {
@@ -105,7 +143,7 @@
                         letter-spacing: $letter-spaceOne;
                         font-weight: 600;
                     }
-                }
+                }  
             }
         }
     }

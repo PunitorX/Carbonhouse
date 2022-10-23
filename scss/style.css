@@ -4,8 +4,8 @@
   background-color: #e5e5e5;
 }
 .hero .hero-container {
-  margin: 0 2rem;
-  padding: 2rem 2rem 3rem 2rem;
+  margin: 0 2.5rem;
+  padding: 2rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -13,12 +13,14 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
+  margin: 0 9px;
   border-bottom: 2px solid #000;
+  bottom: 0;
 }
 .hero .hero-container .hero-top .hero-left {
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
-  letter-spacing: 1.4px;
+  letter-spacing: 3.5px;
   font-size: 32px;
 }
 .hero .hero-container .hero-top .hero-right {
@@ -34,19 +36,50 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .hero .hero-container .hero-bottom .hero-card {
   color: #de53f4;
-  width: 550px;
+  width: 570px;
   font-family: "Oswald", sans-serif;
   margin: 0.5rem 0.5rem;
 }
-.hero .hero-container .hero-bottom .hero-card .hero-img {
-  height: auto;
+.hero .hero-container .hero-bottom .hero-card .hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  transition: 0.4s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-overlay .hero-btn {
+  padding: 1rem 4rem;
+  cursor: pointer;
+  opacity: 1;
+  font-size: 20px;
+  letter-spacing: 3.5px;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+  color: #de53f4;
+  border: 2px solid #de53f4;
+  background-color: #2e2e2e;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-overlay:hover {
+  opacity: 0.6;
+  background-color: #fff;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-img {
+  height: 500px;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-img img {
-  width: 550px;
+  height: 100%;
+  width: 570px;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-event {
   height: 50px;
@@ -151,6 +184,8 @@ body .navbar .navbar-search input {
   font-size: 20px;
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.4px;
+  outline: none;
+  color: #000;
 }
 body .navbar .navbar-search div {
   position: absolute;
@@ -161,7 +196,7 @@ body .navbar .navbar-login {
   background-color: #de53f4;
   display: flex;
   align-items: center;
-  padding: 0 4rem 0 2rem;
+  padding: 0 5rem 0 1rem;
 }
 body .navbar .navbar-login button {
   border: none;
@@ -185,12 +220,11 @@ body .navbar-two div {
   height: inherit;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
-  margin: 0 2rem;
+  margin: 0 0 0 80px;
 }
 body .navbar-two div div {
   height: 140px;
-  width: 15%;
+  width: 290px;
   color: #fff;
   background-color: #2e2e2e;
   display: flex;
@@ -201,23 +235,28 @@ body .navbar-two div div {
   transform: translateY(-50px);
   text-shadow: 0 5px 2px #000;
   font-family: "Lato", sans-serif;
+  margin-left: 0;
 }
 body .navbar-two div div h1 {
   font-size: 52px;
+  width: 100%;
+  text-align: center;
 }
 body .navbar-two div div span {
-  font-size: 24px;
+  font-size: 32px;
   font-style: italic;
-  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
 body .navbar-two div ul {
-  width: 1200px;
-  padding-right: 4rem;
+  width: 1235px;
+  padding-right: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   font-size: 24px;
+  margin-right: 2rem;
   font-family: "Oswald", sans-serif;
 }
 body .navbar-two div ul li {

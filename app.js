@@ -4,7 +4,10 @@ function createEvent([img, date, day, name, tour]) {
     const guest = `
     <div class="hero-card">
         <div class="hero-img">
-            <img src="${img}" alt="">
+            <div class="hero-overlay">
+                <button class="hero-btn">Tickets</button>
+            </div>
+            <img src="${img}" alt="">     
         </div>
         <div class="hero-event">
             <div class="hero-date">
