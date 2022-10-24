@@ -44,7 +44,14 @@
   font-family: "Oswald", sans-serif;
   margin: 0.5rem 0.5rem;
 }
-.hero .hero-container .hero-bottom .hero-card .hero-overlay {
+.hero .hero-container .hero-bottom .hero-card .hero-img {
+  height: 500px;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay {
+  background-color: gray;
   position: absolute;
   width: 100%;
   height: inherit;
@@ -54,28 +61,19 @@
   justify-content: center;
   align-items: center;
 }
-.hero .hero-container .hero-bottom .hero-card .hero-overlay .hero-btn {
+.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay .hero-link {
   padding: 1rem 4rem;
   cursor: pointer;
-  opacity: 1;
   font-size: 20px;
   letter-spacing: 3.5px;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  color: #de53f4;
   border: 2px solid #de53f4;
   background-color: #2e2e2e;
 }
-.hero .hero-container .hero-bottom .hero-card .hero-overlay:hover {
-  opacity: 0.6;
-  background-color: #fff;
-}
-.hero .hero-container .hero-bottom .hero-card .hero-img {
-  height: 500px;
-  text-transform: uppercase;
-  position: relative;
-  transition: 0.5s ease;
+.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay:hover {
+  opacity: 1;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-img img {
   height: 100%;
@@ -120,6 +118,11 @@
   color: #000;
   letter-spacing: 1.4px;
   font-weight: 600;
+}
+
+footer {
+  height: 60vh;
+  background-color: #2e2e2e;
 }
 
 *, *::before, *::after {

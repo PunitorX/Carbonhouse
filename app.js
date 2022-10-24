@@ -5,7 +5,7 @@ function createEvent([img, date, day, name, tour]) {
     <div class="hero-card">
         <div class="hero-img">
             <div class="hero-overlay">
-                <button class="hero-btn">Tickets</button>
+                <a class="hero-link">Tickets</a>
             </div>
             <img src="${img}" alt="">     
         </div>
@@ -39,35 +39,35 @@ const guest1 = [
     'The Pink Print Tour'];
 
 const guest2 = [
-    'images/Niki.jpg',
+    'images/Nick Jonas.png',
     'July 30, 2015',
     'Saturday',
     'Nick Jonas',
     "'Live in Concert' Tour"];
 
 const guest3 = [
-    'images/Niki.jpg',
+    'images/Taylor Swift.png',
     'August 06, 2015',
     'Thursday',
     'Taylor Swift',
     'The 1989 World Tour'];
     
 const guest4 = [
-    'images/Niki.jpg',
+    'images/Sam Smith.png',
     'August 15, 2015',
     'Saturday',
     'Sam Smith',
     'In the Lonely Hour Tour'];
 
 const guest5 = [
-    'images/Niki.jpg',
+    'images/Iggy.png',
     'August 22, 2015',
     'Friday',
     'Iggy Azalea',
     "'Great Escape' Tour"];
         
 const guest6 = [
-    'images/Niki.jpg',
+    'images/Brandon Flowers.png',
     'August 30, 2015',
     'Saturday',
     'Brandon Flowers',
