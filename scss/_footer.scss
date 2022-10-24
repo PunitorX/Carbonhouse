@@ -4,17 +4,22 @@ footer {
 
     .footer-container {
         height: 700px;
-        position: relative;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-three;
+
+        .footer-newsletter {
+            background-color: $color-two;
+            opacity: .7;
+            position: absolute;
+            height: 400px;
+            width:1000px;
+        }
+
         img {
             height: 100%;
             width: 100%;
         }
-
-        // .footer-newsletter {
-        //     background-color: $color-two;
-        //     position: absolute;
-        //     height: 100px;
-        // }
     }
 }

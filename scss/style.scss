@@ -93,7 +93,7 @@ body {
             align-items: center;
             padding: 0 5rem 0 1rem;
             
-            button {
+            a {
                 border: none;
                 cursor: pointer;
                 background-color: $color-three;
@@ -104,7 +104,7 @@ body {
                 letter-spacing: $letter-spaceOne;
             }
 
-            button:hover {
+            a:hover {
                 transition: all 0.3s ease;
                 color: $color-two;
             }
