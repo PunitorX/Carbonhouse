@@ -1,4 +1,20 @@
 footer {
-    height: 60vh;
-    background-color: $color-containerOne;
+    height: 750px;
+    background-color: $color-four;
+
+    .footer-container {
+        height: 700px;
+        position: relative;
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        // .footer-newsletter {
+        //     background-color: $color-two;
+        //     position: absolute;
+        //     height: 100px;
+        // }
+    }
 }
