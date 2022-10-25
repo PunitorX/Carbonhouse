@@ -8,7 +8,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -32,8 +31,6 @@ body {
             // height: inherit;
             display: flex;
             align-items: center;
-            padding: 0 3rem 0 0;
-            
 
             li {
                 padding: 0 8px;
@@ -111,6 +108,10 @@ body {
                 color: $color-two;
             }
         }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .navbar-two {
@@ -122,8 +123,6 @@ body {
             display: flex;
             justify-content: space-between;
             margin: 0 0 0 80px;
-            // padding: 0 44px;
-            // padding-left: 40px;
 
             div {
                 height: 140px;
@@ -153,23 +152,34 @@ body {
                     font-family: $font-familyThree;
                     font-weight: bold;
                 }
+
+                @include mobile {
+                    height: auto;
+                    width: 225px;
+                    transform: none;
+                    margin: 8px 8px 8px 0;
+                }
     
             }
             
             ul {
-                width: 1235px;
-                padding-right: 5rem;
+                width: 100%;
+                // padding: 0 5rem;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-end;
                 align-items: center;
                 list-style: none;
                 font-size: $fontSize-two;
-                margin-right: 2rem;
+                margin-right: 6.5rem;
+                flex-grow: 1;
                 font-family: $font-familyThree;
+                gap: 105px;
 
                 li {
                     width: auto;
                     letter-spacing: $letter-spaceTwo;
+                    padding: 2rem;
+                    
                 }
 
                 a {
@@ -181,11 +191,24 @@ body {
                     transition: all 0.2s ease-in-out;
                     color: $color-three;
                 }
-            }
-        }
-    }
 
-    @include mobile {
-       
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            @include mobile {
+                margin-left: 8px;
+            }
+            
+        }
+
+        // @include mobile {
+        //     height: auto;
+        // }
+        
     }
+    
+    
 }
+

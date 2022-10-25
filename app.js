@@ -3,6 +3,19 @@ const event = document.querySelector(".hero-bottom");
 function createEvent([img, date, day, name, tour]) {
     const guest = `
     <div class="hero-card">
+
+        <div class="hero-mobile">
+            <img src="${img}" alt="">     
+            <div class="hero-mobile-info">
+                <div class="hero-mobile-name">
+                    ${name}
+                </div>
+                <div class="hero-mobile-tour">
+                    ${tour}
+                </div>
+            </div>
+        </div>
+
         <img src="${img}" alt="">     
         <div class="hero-event">
             <div class="hero-date">
@@ -13,6 +26,10 @@ function createEvent([img, date, day, name, tour]) {
             </div>
         </div>
         <div class="hero-person">
+            <div class="hero-buy">
+                <i class="fa-regular fa-ticket"></i>
+                <a class="hero-ticket">Buy Tickets</a>
+            </div>
             <div class="hero-name">
                 ${name}
             </div>

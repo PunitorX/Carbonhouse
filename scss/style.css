@@ -33,6 +33,19 @@
   padding: 0 1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-top .hero-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-top {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin: 0;
+  }
+}
 .hero .hero-container .hero-bottom {
   height: 100%;
   width: auto;
@@ -57,6 +70,47 @@
 .hero .hero-container .hero-bottom .hero-card img {
   height: auto;
   width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card img {
+    display: none;
+  }
+}
+.hero .hero-container .hero-bottom .hero-card .hero-mobile {
+  display: none;
+}
+.hero .hero-container .hero-bottom .hero-card .hero-mobile img {
+  display: block;
+  height: auto;
+  width: 125px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card .hero-mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero .hero-container .hero-bottom .hero-card .hero-mobile .hero-mobile-info {
+    width: 100%;
+    padding-top: 8px;
+    padding-left: 12px;
+    text-align: left;
+  }
+  .hero .hero-container .hero-bottom .hero-card .hero-mobile .hero-mobile-name {
+    letter-spacing: 3.5px;
+    font-size: 32px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .hero .hero-container .hero-bottom .hero-card .hero-mobile .hero-mobile-tour {
+    letter-spacing: 1.4px;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+  }
 }
 .hero .hero-container .hero-bottom .hero-card .hero-event {
   height: auto;
@@ -90,6 +144,30 @@
   padding: 2rem;
   width: 100%;
 }
+.hero .hero-container .hero-bottom .hero-card .hero-person .hero-buy {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card .hero-person .hero-buy {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  .hero .hero-container .hero-bottom .hero-card .hero-person .hero-buy i {
+    display: block;
+    color: #fff;
+  }
+  .hero .hero-container .hero-bottom .hero-card .hero-person .hero-buy .hero-ticket {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+  }
+}
 .hero .hero-container .hero-bottom .hero-card .hero-person .hero-name {
   font-size: 30px;
   height: auto;
@@ -98,6 +176,11 @@
   padding-bottom: 4px;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card .hero-person .hero-name {
+    display: none;
+  }
 }
 .hero .hero-container .hero-bottom .hero-card .hero-person .hero-tour {
   height: auto;
@@ -108,6 +191,33 @@
   color: #000;
   letter-spacing: 1.4px;
   font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card .hero-person .hero-tour {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card .hero-person {
+    padding: 1rem;
+    height: auto;
+    background-color: #de53f4;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container .hero-bottom .hero-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    background-color: #fff;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-container {
+    padding: 0 4px;
+    margin: 0 12px;
+    width: auto;
+  }
 }
 
 footer {
@@ -164,7 +274,7 @@ footer .footer-container .footer-info .footer-update {
   font-family: "Merriweather", serif;
   letter-spacing: 1.4px;
   width: auto;
-  padding: 1rem 0 2rem 0;
+  padding: 0.5rem 0 2.5rem 0;
 }
 footer .footer-container .footer-info .footer-link {
   font-size: 20px;
@@ -212,7 +322,6 @@ body .navbar .navbar-container {
 body .navbar ul {
   display: flex;
   align-items: center;
-  padding: 0 3rem 0 0;
 }
 body .navbar ul li {
   padding: 0 8px;
@@ -279,6 +388,11 @@ body .navbar .navbar-login a:hover {
   transition: all 0.3s ease;
   color: #000;
 }
+@media screen and (max-width: 600px) {
+  body .navbar {
+    display: none;
+  }
+}
 body .navbar-two {
   background-color: #000;
   height: 120px;
@@ -315,20 +429,30 @@ body .navbar-two div div span {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
 }
+@media screen and (max-width: 600px) {
+  body .navbar-two div div {
+    height: auto;
+    width: 225px;
+    transform: none;
+    margin: 8px 8px 8px 0;
+  }
+}
 body .navbar-two div ul {
-  width: 1235px;
-  padding-right: 5rem;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   font-size: 24px;
-  margin-right: 2rem;
+  margin-right: 6.5rem;
+  flex-grow: 1;
   font-family: "Oswald", sans-serif;
+  gap: 105px;
 }
 body .navbar-two div ul li {
   width: auto;
   letter-spacing: 3.5px;
+  padding: 2rem;
 }
 body .navbar-two div ul a {
   text-decoration: none;
@@ -337,4 +461,14 @@ body .navbar-two div ul a {
 body .navbar-two div ul a:hover {
   transition: all 0.2s ease-in-out;
   color: #de53f4;
+}
+@media screen and (max-width: 600px) {
+  body .navbar-two div ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .navbar-two div {
+    margin-left: 8px;
+  }
 }/*# sourceMappingURL=style.css.map */
