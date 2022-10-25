@@ -3,12 +3,7 @@ const event = document.querySelector(".hero-bottom");
 function createEvent([img, date, day, name, tour]) {
     const guest = `
     <div class="hero-card">
-        <div class="hero-img">
-            <div class="hero-overlay">
-                <a class="hero-link">Tickets</a>
-            </div>
-            <img src="${img}" alt="">     
-        </div>
+        <img src="${img}" alt="">     
         <div class="hero-event">
             <div class="hero-date">
                 ${date}
@@ -79,3 +74,9 @@ createEvent(guest3);
 createEvent(guest4);
 createEvent(guest5);
 createEvent(guest6);
+
+// Overlay markup
+
+{/* <div class="hero-overlay">
+            <a class="hero-link">Tickets</a>
+</div> */}

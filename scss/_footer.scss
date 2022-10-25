@@ -1,62 +1,97 @@
 @import 'config';
 
 footer {
-    height: 750px;
+    // height: auto;
+    // width: 100%;
+    padding: 2rem 0 4rem 0;
     background-color: $color-four;
 
     .footer-container {
-        height: 700px;
+        // height: auto;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         color: $color-three;
+        position: relative;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
 
         .footer-newsletter {
             background-color: $color-two;
-            // opacity: .7;
+            opacity: .7;
             position: absolute;
-            height: 350px;
-            width:850px;
+            height: 50%;
+            width: 50%;
+        }
+
+        .footer-info {
+            position: absolute;
+            height: fit-content;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 1rem;
+        
+
+        .footer-signup {
+            // position: absolute;
+            color: $color-one;
+            text-transform: uppercase;
+            font-family: $font-familyThree;
+            letter-spacing: $letter-spaceTwo;
+            font-size: 28px;
+            height: auto;
+            width: 100%; 
+            text-align: center;
+
+            h1 {
+                width: 100%;
+            }
+              
+        }
+    
+        .footer-update {
+            // position: absolute;
+            font-size: $fontSize-one;
+            font-style: italic;
+            font-family: $font-familyTwo;
+            letter-spacing: $letter-spaceOne;
+            // height: 100%;
+            width: auto;  
+            padding: 1rem 0 2rem 0;
+        }
+    
+        .footer-link {
+            // position: absolute;
+            font-size: $fontSize-one;
+            transition: all 0.3s ease-in-out;
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
 
-            .footer-signup {
-                color: $color-one;
-                text-transform: uppercase;
+            a {
                 font-family: $font-familyThree;
-                letter-spacing: $letter-spaceTwo;
-                font-size: $fontSize-two;
-            }
-
-            .footer-update {
-                font-size: $fontSize-one;
-                font-style: italic;
-                font-family: $font-familyTwo;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $color-one;
                 letter-spacing: $letter-spaceOne;
-                padding: .5rem 0 1rem 0;
+                border: 1px solid $color-one;
+                padding: .5rem 5rem;
+                transition: all 0.3s ease-in-out;
             }
 
-            .footer-link {
-                padding: 2rem;
-                font-size: $fontSize-one;
-
-                a {
-                    font-family: $font-familyThree;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: $color-one;
-                    letter-spacing: $letter-spaceOne;
-                    border: 1px solid $color-one;
-                    padding: .5rem 5rem;
-                }
+            a:hover {
+                background-color: $color-one;
+                color: $color-two;
+                transition: all 0.3s ease-in;
+                transform: scale(1.1);
             }
         }
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
+    }
     }
 }

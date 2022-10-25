@@ -1,11 +1,35 @@
-@mixin tablet {
-    @media screen and (max-width: 768px) {
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
         @content;
     }
 }
 
-@mixin mobile {
-    @media screen and (max-width: 280px) {
+@mixin laptop {
+    @media screen and (min-width: 992px) {
         @content;
     }
 }
+
+// tablets (landscape)
+@mixin ls-tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+// large phones, tablets (portrait)
+@mixin pt-tablet {
+    @media screen and (min-width: 600px) {
+        @content;
+        
+    }
+}
+
+// Phones
+@mixin mobile {
+    @media screen and (max-width: 600px) {
+        @content;
+        
+    }
+}
+

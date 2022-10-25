@@ -1,18 +1,20 @@
 .hero {
-  height: auto;
   width: 100%;
+  height: auto;
   background-color: #e5e5e5;
 }
 .hero .hero-container {
+  height: auto;
   margin: 0 2.5rem;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
 }
 .hero .hero-container .hero-top {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2rem;
+  height: auto;
+  padding: 2rem 0;
   margin: 0 9px;
   border-bottom: 2px solid #000;
   bottom: 0;
@@ -32,54 +34,33 @@
   cursor: pointer;
 }
 .hero .hero-container .hero-bottom {
-  padding-top: 2rem;
+  height: 100%;
+  width: auto;
+  padding: 2rem 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
 }
 .hero .hero-container .hero-bottom .hero-card {
+  -o-object-fit: contain;
+     object-fit: contain;
   color: #de53f4;
-  width: 570px;
   font-family: "Oswald", sans-serif;
-  margin: 0.5rem 0.5rem;
-}
-.hero .hero-container .hero-bottom .hero-card .hero-img {
-  height: 500px;
-  text-transform: uppercase;
-  position: relative;
-  transition: 0.5s ease;
-}
-.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: inherit;
-  transition: 0.4s ease;
-  opacity: 0;
+  padding: 0.5rem 0.5rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  flex-grow: 1;
+  height: auto;
+  width: 30%;
 }
-.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay .hero-link {
-  padding: 1rem 4rem;
-  cursor: pointer;
-  font-size: 20px;
-  letter-spacing: 3.5px;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  border: 2px solid #de53f4;
-  background-color: #2e2e2e;
-}
-.hero .hero-container .hero-bottom .hero-card .hero-img .hero-overlay:hover {
-  opacity: 1;
-}
-.hero .hero-container .hero-bottom .hero-card .hero-img img {
-  height: 100%;
-  width: 570px;
+.hero .hero-container .hero-bottom .hero-card img {
+  height: auto;
+  width: 100%;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-event {
-  height: 50px;
+  height: auto;
+  width: 100%;
   background-color: #000;
   display: flex;
   align-items: center;
@@ -89,10 +70,15 @@
   text-transform: uppercase;
   letter-spacing: 1.4px;
 }
+.hero .hero-container .hero-bottom .hero-card .hero-event .hero-date {
+  padding: 8px 0;
+  height: auto;
+  width: 100%;
+}
 .hero .hero-container .hero-bottom .hero-card .hero-event .hero-day {
   background-color: #2e2e2e;
-  height: 50px;
-  width: 110px;
+  height: 40px;
+  width: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,15 +88,20 @@
   background-color: #fff;
   text-align: center;
   padding: 2rem;
+  width: 100%;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-person .hero-name {
   font-size: 30px;
+  height: auto;
+  width: 100%;
   letter-spacing: 3.5px;
   padding-bottom: 4px;
   font-weight: 600;
   text-transform: uppercase;
 }
 .hero .hero-container .hero-bottom .hero-card .hero-person .hero-tour {
+  height: auto;
+  width: 100%;
   font-size: 18px;
   font-style: italic;
   font-family: "Merriweather", serif;
@@ -120,45 +111,68 @@
 }
 
 footer {
-  height: 750px;
+  padding: 2rem 0 4rem 0;
   background-color: #e5e5e5;
 }
 footer .footer-container {
-  height: 700px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: #de53f4;
+  position: relative;
+}
+footer .footer-container img {
+  height: auto;
+  width: 100%;
 }
 footer .footer-container .footer-newsletter {
   background-color: #000;
+  opacity: 0.7;
   position: absolute;
-  height: 350px;
-  width: 850px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 50%;
+  width: 50%;
 }
-footer .footer-container .footer-newsletter .footer-signup {
+footer .footer-container .footer-info {
+  position: absolute;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+footer .footer-container .footer-info .footer-signup {
   color: #fff;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   letter-spacing: 3.5px;
-  font-size: 24px;
+  font-size: 28px;
+  height: auto;
+  width: 100%;
+  text-align: center;
 }
-footer .footer-container .footer-newsletter .footer-update {
+footer .footer-container .footer-info .footer-signup h1 {
+  width: 100%;
+}
+footer .footer-container .footer-info .footer-update {
   font-size: 20px;
   font-style: italic;
   font-family: "Merriweather", serif;
   letter-spacing: 1.4px;
-  padding: 0.5rem 0 1rem 0;
+  width: auto;
+  padding: 1rem 0 2rem 0;
 }
-footer .footer-container .footer-newsletter .footer-link {
-  padding: 2rem;
+footer .footer-container .footer-info .footer-link {
   font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
 }
-footer .footer-container .footer-newsletter .footer-link a {
+footer .footer-container .footer-info .footer-link a {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -166,10 +180,13 @@ footer .footer-container .footer-newsletter .footer-link a {
   letter-spacing: 1.4px;
   border: 1px solid #fff;
   padding: 0.5rem 5rem;
+  transition: all 0.3s ease-in-out;
 }
-footer .footer-container img {
-  height: 100%;
-  width: 100%;
+footer .footer-container .footer-info .footer-link a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in;
+  transform: scale(1.1);
 }
 
 *, *::before, *::after {

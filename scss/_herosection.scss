@@ -1,18 +1,20 @@
 .hero {
-    height: auto;
     width: 100%;
+    height: auto; 
     background-color: $color-four; 
     
     .hero-container {
+        height: auto;
         margin: 0 2.5rem;
-        padding: 2rem 2rem 4rem 2rem;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
 
         .hero-top {
             display: flex;
             justify-content: space-between;
-            padding-bottom: 2rem;
+            height: auto;
+            padding: 2rem 0;
             margin: 0 9px;
             border-bottom: 2px solid $color-two;
             bottom: 0;
@@ -38,61 +40,35 @@
         
 
         .hero-bottom {
-            padding-top: 2rem;
+            height: 100%;
+            width: auto;
+            padding: 2rem 0;
             display: flex;
-            justify-content: center;    
+            // justify-content: center;    
+            // align-items: stretch;
             flex-wrap: wrap;
-            width: 100%;
 
             .hero-card {
+                object-fit: contain;
                 color: $color-three;
-                width: 570px;
                 font-family: $font-familyThree; 
-                margin: .5rem .5rem;
-                
-                .hero-img {
-                    height: 500px;
-                    text-transform: uppercase;
-                    position: relative;
-                    transition: .5s ease;
-
-                    .hero-overlay {
-                        position: absolute; 
-                        width: 100%;
-                        height: inherit;
-                        transition: .4s ease;
-                        opacity: 0;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;    
-                        
-                        .hero-link {
-                            // z-index: 1;
-                            padding: 1rem 4rem;
-                            cursor: pointer;
-                            font-size: $fontSize-one;
-                            letter-spacing: $letter-spaceTwo;
-                            font-family: $font-familyOne;
-                            text-transform: uppercase;
-                            font-weight: bold;
-                            border: 2px solid $color-three;
-                            background-color: $color-containerOne;
-                        }
-                    }
-
-                    .hero-overlay:hover {
-                        // background-color: gray;
-                        opacity: 1;
-                    }
-
-                    img {
-                        height: 100%;
-                        width: 570px; 
-                    }   
-                }
+                padding: .5rem .5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;    
+                align-items: stretch;
+                flex-grow: 1;
+                height: auto;
+                width: 30%;
+           
+                img {
+                    height: auto;
+                    width: 100%; 
+                }   
 
                 .hero-event {
-                    height: 50px;
+                    height: auto;
+                    width: 100%;
                     background-color: $color-two; 
                     display: flex;
                     align-items: center;
@@ -102,15 +78,20 @@
                     text-transform: uppercase;
                     letter-spacing: $letter-spaceOne;
 
+                    .hero-date {
+                        padding: 8px 0;
+                        height: auto;
+                        width: 100%;
+                    }
+
                     .hero-day {
                         background-color: $color-containerOne;
-                        height: 50px;
-                        width: 110px;
+                        height: 40px;
+                        width: 130px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         transform: translateY(-7px);
-                        
                     }
 
                 }
@@ -119,9 +100,12 @@
                     background-color:  $color-one;
                     text-align: center;
                     padding: 2rem;
+                    width: 100%;
 
                     .hero-name {
                         font-size: 30px;
+                        height: auto;
+                        width: 100%;
                         letter-spacing: $letter-spaceTwo;
                         padding-bottom: 4px;
                         font-weight: 600;
@@ -129,6 +113,8 @@
                     }
 
                     .hero-tour {
+                        height: auto;
+                        width: 100%;
                         font-size: $fontSize-five;
                         font-style: italic;
                         font-family: $font-familyTwo;
@@ -141,3 +127,40 @@
         }
     }
 }
+
+
+// overlay css 
+
+
+                // .hero-overlay {
+                //     position: absolute; 
+                //     transition: .4s ease;
+                //     opacity: 0;
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;   
+                //     height: auto;
+                //     width: 100%; 
+                    
+                //     .hero-link {
+                //         // z-index: 1;
+                //         position: absolute;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;  
+                //         padding: 1rem 4rem;
+                //         cursor: pointer;
+                //         font-size: $fontSize-one;
+                //         letter-spacing: $letter-spaceTwo;
+                //         font-family: $font-familyOne;
+                //         text-transform: uppercase;
+                //         font-weight: bold;
+                //         border: 2px solid $color-three;
+                //         background-color: $color-containerOne;
+                //     }
+                // }
+
+                // .hero-overlay:hover {
+                //     // background-color: gray;
+                //     opacity: 1;
+                // }
