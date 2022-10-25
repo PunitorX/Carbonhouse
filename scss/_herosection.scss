@@ -98,14 +98,13 @@
                         
                         .hero-mobile-info {
                             width: 100%;
-                            padding-top: 8px;
                             padding-left: 12px;
                             text-align: left;
                         }
 
                         .hero-mobile-name {
-                            letter-spacing: $letter-spaceTwo;
-                            font-size: $fontSize-four;
+                            letter-spacing: $letter-spaceOne;
+                            font-size: $fontSize-two;
                             font-family: $font-familyThree;
                             text-transform: uppercase;
                             font-weight: bold;
