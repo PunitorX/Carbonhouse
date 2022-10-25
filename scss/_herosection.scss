@@ -39,6 +39,12 @@
                 @include mobile {
                     display: none;
                 }
+
+                @include pt-tablet {
+                    display: none;
+                }
+
+                
             }
 
             @include mobile {
