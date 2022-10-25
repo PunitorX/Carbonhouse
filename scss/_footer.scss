@@ -37,6 +37,7 @@ footer {
             justify-content: center;
             flex-direction: column;
             margin: 1rem;
+        }
         
 
         .footer-signup {
@@ -80,7 +81,7 @@ footer {
                 text-decoration: none;
                 color: $color-one;
                 letter-spacing: $letter-spaceOne;
-                border: 1px solid $color-one;
+                border: 2px solid $color-one;
                 padding: .5rem 5rem;
                 transition: all 0.3s ease-in-out;
             }
@@ -92,6 +93,50 @@ footer {
                 transform: scale(1.1);
             }
         }
+
+        @include mobile {
+            height: 100%;
+            overflow: hidden;
+            
+            img {
+                transform: scale(1.4);
+                width: 700px;
+                height: 100%;
+            }
+
+            .footer-newsletter{
+                width: 450px;
+                height: 350px;
+            }
+
+            .footer-info {
+                width: 450px;
+                height: 350px;
+                padding: 1rem;
+                gap: 10px;
+
+                .footer-signup {
+                    font-size: $fontSize-two;
+                    line-height:50px;
+                }
+
+                .footer-update {
+                    text-align: center;
+                    font-size: $fontSize-two;
+                    padding-bottom: 1rem;
+                }
+
+                a {
+                    padding: .5rem 7.5rem;
+                }
+            }
+
+        }
     }
+
+    @include mobile {
+        height: 550px;
+        padding: 1rem 0 2.5rem 0;
     }
+    
 }
