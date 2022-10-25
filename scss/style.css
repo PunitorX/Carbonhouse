@@ -38,6 +38,11 @@
     display: none;
   }
 }
+@media screen and (min-width: 600px) {
+  .hero .hero-container .hero-top .hero-right {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
   .hero .hero-container .hero-top {
     display: flex;
@@ -366,6 +371,11 @@ body .navbar ul li {
   list-style-type: none;
   transition: all 0.3s ease-in;
 }
+@media screen and (min-width: 600px) {
+  body .navbar ul li {
+    display: none;
+  }
+}
 body .navbar ul .navbar-header {
   font-family: "Oswald", sans-serif;
   color: #de53f4;
@@ -404,6 +414,11 @@ body .navbar .navbar-search input {
 body .navbar .navbar-search div {
   position: absolute;
   right: 5%;
+}
+@media screen and (min-width: 600px) {
+  body .navbar .navbar-search {
+    display: none;
+  }
 }
 body .navbar .navbar-login {
   height: inherit;
@@ -511,6 +526,11 @@ body .navbar-two div ul a:hover {
   color: #de53f4;
 }
 @media screen and (max-width: 600px) {
+  body .navbar-two div ul {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
   body .navbar-two div ul {
     display: none;
   }
