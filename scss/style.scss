@@ -1,4 +1,5 @@
 @import 'config';
+@import 'media-queries';
 @import 'herosection';
 @import 'footer';
 // @import 'card';
@@ -7,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -181,6 +183,9 @@ body {
                 }
             }
         }
+    }
 
+    @include mobile {
+       
     }
 }
