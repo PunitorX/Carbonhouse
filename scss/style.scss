@@ -120,6 +120,10 @@ body {
         @include mobile {
             display: none;
         }
+
+        @include pt-tablet {
+            display: none;
+        }
     }
 
     .navbar-two {
@@ -171,6 +175,13 @@ body {
                 }
 
                 @include mobile {
+                    height: auto;
+                    width: 225px;
+                    transform: none;
+                    margin: 8px 8px 8px 0;
+                }
+
+                @include pt-tablet {
                     height: auto;
                     width: 225px;
                     transform: none;
@@ -232,6 +243,11 @@ body {
             @include mobile {
                 margin-left: 8px;
             }
+
+            @include pt-tablet {
+                margin-left: 8px;
+            }
+
             
         }
 

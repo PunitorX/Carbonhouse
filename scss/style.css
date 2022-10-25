@@ -446,6 +446,11 @@ body .navbar .navbar-login a:hover {
     display: none;
   }
 }
+@media screen and (min-width: 600px) {
+  body .navbar {
+    display: none;
+  }
+}
 body .navbar-two {
   background-color: #000;
   height: 120px;
@@ -500,6 +505,14 @@ body .navbar-two div div span {
     margin: 8px 8px 8px 0;
   }
 }
+@media screen and (min-width: 600px) {
+  body .navbar-two div div {
+    height: auto;
+    width: 225px;
+    transform: none;
+    margin: 8px 8px 8px 0;
+  }
+}
 body .navbar-two div ul {
   width: 100%;
   display: flex;
@@ -546,6 +559,11 @@ body .navbar-two div .navbar-bars {
   }
 }
 @media screen and (max-width: 600px) {
+  body .navbar-two div {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 600px) {
   body .navbar-two div {
     margin-left: 8px;
   }
