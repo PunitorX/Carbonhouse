@@ -144,6 +144,11 @@ body {
                     font-size: $fontSize-three;
                     width: 100%;
                     text-align: center;
+
+                    @include mobile {
+                      font-size: $fontSize-three;
+                    }
+                    
                 }
 
                 span {
@@ -151,6 +156,10 @@ body {
                     font-style: italic;
                     font-family: $font-familyThree;
                     font-weight: bold;
+
+                    @include mobile {
+                        font-size: $fontSize-one;
+                      }
                 }
 
                 @include mobile {

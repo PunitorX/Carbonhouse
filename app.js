@@ -27,7 +27,7 @@ function createEvent([img, date, day, name, tour]) {
         </div>
         <div class="hero-person">
             <div class="hero-buy">
-                <i class="fa-regular fa-ticket"></i>
+                <i class="fa-regular fa-ticket fa-2x"></i>
                 <a class="hero-ticket">Buy Tickets</a>
             </div>
             <div class="hero-name">

@@ -92,13 +92,12 @@
   }
   .hero .hero-container .hero-bottom .hero-card .hero-mobile .hero-mobile-info {
     width: 100%;
-    padding-top: 8px;
     padding-left: 12px;
     text-align: left;
   }
   .hero .hero-container .hero-bottom .hero-card .hero-mobile .hero-mobile-name {
-    letter-spacing: 3.5px;
-    font-size: 32px;
+    letter-spacing: 1.4px;
+    font-size: 24px;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
@@ -309,11 +308,11 @@ footer .footer-container .footer-link a:hover {
     height: 100%;
   }
   footer .footer-container .footer-newsletter {
-    width: 450px;
+    width: 375px;
     height: 350px;
   }
   footer .footer-container .footer-info {
-    width: 450px;
+    width: 425px;
     height: 350px;
     padding: 1rem;
     gap: 10px;
@@ -328,7 +327,7 @@ footer .footer-container .footer-link a:hover {
     padding-bottom: 1rem;
   }
   footer .footer-container .footer-info a {
-    padding: 0.5rem 7.5rem;
+    padding: 0.5rem 5.5rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -462,11 +461,21 @@ body .navbar-two div div h1 {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  body .navbar-two div div h1 {
+    font-size: 52px;
+  }
+}
 body .navbar-two div div span {
   font-size: 32px;
   font-style: italic;
   font-family: "Oswald", sans-serif;
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  body .navbar-two div div span {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   body .navbar-two div div {
