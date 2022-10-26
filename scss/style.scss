@@ -201,12 +201,20 @@ body {
                 height: 140px;
                 width: 290px;
                 color: $color-one;
-                background-color: $color-containerOne;
+                background: linear-gradient(
+                    to right,
+                    $color-containerOne 0%,
+                    $color-containerOne 60%,
+                    $color-containerTwo 60%,
+                    $color-containerTwo 100%
+                );
+                // transform: rotate(260deg);
+                // background-color: $color-containerOne;
                 display: flex;
                 justify-content: center;
                 align-items: center;                   
                 text-transform: uppercase;
-                letter-spacing: $letter-spaceTwo;
+                letter-spacing: 4px;
                 transform: translateY(-50px);
                 text-shadow: 0 5px 2px $color-two;
                 font-family: $font-familyOne;
@@ -226,10 +234,10 @@ body {
                 }
 
                 span {
-                    font-size: $fontSize-four;
-                    font-style: italic;
+                    font-size: $fontSize-two;
+                    font-style: oblique;
                     font-family: $font-familyThree;
-                    font-weight: bold;
+                    font-weight: 600;
 
                     @include mobile {
                         font-size: $fontSize-one;
@@ -348,7 +356,7 @@ body {
                 @include mobile {
                     display: flex;
                     justify-content: flex-end;
-                    background-color: $color-two;
+                    background: $color-two;
                     padding-right: 0;
                 }
 
@@ -356,7 +364,7 @@ body {
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
-                    background-color: $color-two;
+                    background: $color-two;
                     padding-right: 1rem;
                 }
 
@@ -365,7 +373,7 @@ body {
                     justify-content: flex-end;
                     align-items: center;
                     padding-right: .5rem;
-                    background-color: $color-two;
+                    background: $color-two;
                 }
             }
 

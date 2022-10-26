@@ -88,6 +88,7 @@
   flex-grow: 1;
   height: auto;
   width: 30%;
+  position: relative;
 }
 .hero .hero-container .hero-bottom .hero-card img {
   height: auto;
@@ -708,12 +709,12 @@ body .navbar-two div div {
   height: 140px;
   width: 290px;
   color: #fff;
-  background-color: #2e2e2e;
+  background: linear-gradient(to right, #2e2e2e 0%, #2e2e2e 60%, #3a3a3a 60%, #3a3a3a 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 4px;
   transform: translateY(-50px);
   text-shadow: 0 5px 2px #000;
   font-family: "Lato", sans-serif;
@@ -731,10 +732,10 @@ body .navbar-two div div h1 {
   }
 }
 body .navbar-two div div span {
-  font-size: 32px;
-  font-style: italic;
+  font-size: 24px;
+  font-style: oblique;
   font-family: "Oswald", sans-serif;
-  font-weight: bold;
+  font-weight: 600;
 }
 @media screen and (max-width: 600px) {
   body .navbar-two div div span {
@@ -856,7 +857,7 @@ body .navbar-two div .navbar-bars {
   body .navbar-two div .navbar-bars {
     display: flex;
     justify-content: flex-end;
-    background-color: #000;
+    background: #000;
     padding-right: 0;
   }
 }
@@ -865,7 +866,7 @@ body .navbar-two div .navbar-bars {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #000;
+    background: #000;
     padding-right: 1rem;
   }
 }
@@ -875,7 +876,7 @@ body .navbar-two div .navbar-bars {
     justify-content: flex-end;
     align-items: center;
     padding-right: 0.5rem;
-    background-color: #000;
+    background: #000;
   }
 }
 @media screen and (max-width: 600px) {

@@ -15,7 +15,7 @@ function createEvent([img, date, day, name, tour]) {
                 </div>
             </div>
         </div>
-
+        
         <img src="${img}" alt="">     
         <div class="hero-event">
             <div class="hero-date">
@@ -92,8 +92,3 @@ createEvent(guest4);
 createEvent(guest5);
 createEvent(guest6);
 
-// Overlay markup
-
-{/* <div class="hero-overlay">
-            <a class="hero-link">Tickets</a>
-</div> */}

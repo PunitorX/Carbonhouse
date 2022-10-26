@@ -77,8 +77,6 @@
             width: auto;
             padding: 2rem 0;
             display: flex;
-            // justify-content: center;    
-            // align-items: stretch;
             flex-wrap: wrap;
 
             .hero-card {
@@ -93,7 +91,8 @@
                 flex-grow: 1;
                 height: auto;
                 width: 30%;
-           
+                position: relative;
+
                 img {
                     height: auto;
                     width: 100%; 
@@ -324,41 +323,3 @@
         }
     }
 }
-
-
-
-// overlay css 
-
-
-                // .hero-overlay {
-                //     position: absolute; 
-                //     transition: .4s ease;
-                //     opacity: 0;
-                //     display: flex;
-                //     justify-content: center;
-                //     align-items: center;   
-                //     height: auto;
-                //     width: 100%; 
-                    
-                //     .hero-link {
-                //         // z-index: 1;
-                //         position: absolute;
-                //         display: flex;
-                //         justify-content: center;
-                //         align-items: center;  
-                //         padding: 1rem 4rem;
-                //         cursor: pointer;
-                //         font-size: $fontSize-one;
-                //         letter-spacing: $letter-spaceTwo;
-                //         font-family: $font-familyOne;
-                //         text-transform: uppercase;
-                //         font-weight: bold;
-                //         border: 2px solid $color-three;
-                //         background-color: $color-containerOne;
-                //     }
-                // }
-
-                // .hero-overlay:hover {
-                //     // background-color: gray;
-                //     opacity: 1;
-                // }
