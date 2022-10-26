@@ -25,6 +25,10 @@
                 letter-spacing: $letter-spaceTwo;
                 font-size: $fontSize-four;           
                 
+                @include s-mobile {
+                    text-align: center;
+                    font-size: $fontSize-two;
+                }
             }
 
             .hero-right {
@@ -130,6 +134,11 @@
                             font-family: $font-familyThree;
                             text-transform: uppercase;
                             font-weight: bold;
+
+                            @include s-mobile {
+                                font-size: $fontSize-five;
+                                padding-bottom: .5rem;
+                            }
                         }
 
                         .hero-mobile-tour {
@@ -139,11 +148,17 @@
                             color: $color-two;
                             font-weight: bold;
                             font-style: italic;
+
+                            @include s-mobile {
+                                font-size: 16px;
+                            }
                         }
 
                     }
 
                 }
+
+                // End Mobile card style
 
                 .hero-event {
                     height: auto;
@@ -245,13 +260,14 @@
                         color: $color-two;
                         letter-spacing: $letter-spaceOne;
                         font-weight: 600;
+                        overflow: auto;
 
                         @include mobile {
                             display: none;
                         }
 
                         @include pt-tablet {
-                            font-size: $fontSize-five;
+                            font-size: 16px;
                         }
 
                         
@@ -264,7 +280,7 @@
                     }
 
                     @include pt-tablet {
-                        padding: 2rem 1rem;
+                        padding: 2rem .5rem;
                     }
 
                     @include ls-tablet {
@@ -285,7 +301,7 @@
                 
                 @include pt-tablet {
                     width: 50%;
-                    height: auto;  
+                    // min-height: 450px;  
                 }
 
                 @include ls-tablet {

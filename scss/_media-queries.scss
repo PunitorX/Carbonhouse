@@ -19,9 +19,8 @@
 
 // large phones, tablets (portrait)
 @mixin pt-tablet {
-    @media screen and (min-width: 600px) and (max-width: 767px){
-        @content;
-        
+    @media screen and (min-width: 601px) and (max-width: 767px){
+        @content;      
     }
 }
 
@@ -29,7 +28,18 @@
 @mixin mobile {
     @media screen and (max-width: 600px) {
         @content;
+    }
+}
 
+@mixin m-mobile {
+    @media screen and (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin s-mobile {
+    @media screen and (max-width: 320px) {
+        @content;
     }
 }
 

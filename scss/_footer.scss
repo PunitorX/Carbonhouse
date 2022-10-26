@@ -159,29 +159,35 @@ footer {
             }
 
             .footer-newsletter{
-                width: 375px;
+                width: 90%;
                 height: 350px;
             }
 
             .footer-info {
-                width: 425px;
+                width: auto;
                 height: 350px;
                 padding: 1rem;
                 gap: 10px;
 
                 .footer-signup {
-                    font-size: $fontSize-two;
+                    font-size: $fontSize-one;
                     line-height:50px;
                 }
 
                 .footer-update {
                     text-align: center;
-                    font-size: $fontSize-two;
-                    padding-bottom: 1rem;
+                    font-size: $fontSize-five;
+                    padding: 0 1rem 1rem 1rem;
                 }
 
                 a {
                     padding: .5rem 5.5rem;
+                }
+
+                @include m-mobile {
+                    a {
+                        padding: .5rem 3.5rem;
+                    }
                 }
             }
         }
