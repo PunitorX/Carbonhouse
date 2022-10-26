@@ -27,7 +27,7 @@ function createEvent([img, date, day, name, tour]) {
         </div>
         <div class="hero-person">
             <div class="hero-buy">
-                <i class="fa-regular fa-ticket fa-2x"></i>
+                <i class="fa-solid fa-ticket fa-2x"></i>
                 <a class="hero-ticket">Buy Tickets</a>
             </div>
             <div class="hero-name">
@@ -91,48 +91,3 @@ createEvent(guest3);
 createEvent(guest4);
 createEvent(guest5);
 createEvent(guest6);
-
-const guest = [
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    },
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    },
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    },
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    },
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    },
-    {
-        img: '',
-        date: '',
-        day: '',
-        name: '',
-        tour: ''
-    }
-]

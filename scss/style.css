@@ -685,6 +685,14 @@ body .navbar .navbar-login a {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1.4px;
 }
+body .navbar .navbar-login i {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+body .navbar .navbar-login i:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+}
 body .navbar .navbar-login a:hover {
   transition: all 0.3s ease;
   color: #000;
