@@ -92,3 +92,47 @@ createEvent(guest4);
 createEvent(guest5);
 createEvent(guest6);
 
+const guest = [
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    },
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    },
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    },
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    },
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    },
+    {
+        img: '',
+        date: '',
+        day: '',
+        name: '',
+        tour: ''
+    }
+]
