@@ -25,6 +25,14 @@ body {
             align-items: center;
             letter-spacing: $letter-spaceOne;
             gap: 2rem;
+
+            @include laptop {
+                gap: 0;
+            }
+
+            @include lg-laptop {
+                gap: 0;
+            }
         }
 
         ul {
@@ -40,11 +48,23 @@ body {
                 @include pt-tablet {
                     display: none;
                 }
+
+                @include laptop {
+                    padding: 0 4px;
+                }
             }
 
             .navbar-header {
                 font-family: $font-familyThree;
                 color: $color-three;
+
+                @include laptop {
+                    display: none;
+                }
+
+                @include laptop {
+                    display: contents;
+                }
             }
 
             a {
@@ -65,9 +85,7 @@ body {
             align-items: center;
             justify-content: center;
             padding: 0 0 0 3rem;
-            cursor: pointer;
             position: relative;
-            
             
             input {
                 padding: 8px 24px;
@@ -81,15 +99,38 @@ body {
                 letter-spacing: $letter-spaceOne;
                 outline: none;
                 color: $color-two;
+
+                @include laptop {
+                    width: 300px;
+                }
+
+                @include lg-laptop {
+                    width: 475px;
+                }
             }
 
-            div {
+            i {
                 position: absolute;
                 right: 5%;
+                cursor: pointer;
+
+                @include laptop {
+                    position: absolute;
+                    right: 20%;
+                }
             }
 
             @include pt-tablet {
                 display: none;
+            }
+
+            @include laptop {
+                padding: 0 .5rem 0 0;
+            }
+
+            @include lg-laptop {
+                padding: .5rem;
+                margin-right: 1.5rem;
             }
         }
 
@@ -115,6 +156,14 @@ body {
                 transition: all 0.3s ease;
                 color: $color-two;
             }
+
+            @include laptop {
+                padding-right: 3rem;
+            }
+
+            @include lg-laptop {
+                padding-right: 3rem;
+            }
         }
 
         @include mobile {
@@ -124,7 +173,17 @@ body {
         @include pt-tablet {
             display: none;
         }
+
+        @include ls-tablet {
+            display: none;
+        }
+
+        @include laptop {
+            display: contents;
+        }
     }
+
+    // second navbar styles
 
     .navbar-two {
         background-color: $color-two;
@@ -134,13 +193,15 @@ body {
             height: inherit;
             display: flex;
             justify-content: space-between;
-            margin: 0 0 0 80px;
+            margin: 0 80px 0 80px;
+
+            // logo
 
             div {
                 height: 140px;
                 width: 290px;
                 color: $color-one;
-                background-color: $color-containerOne;
+                background: linear-gradient(to right, #2e2e2e, #3a3a3a);
                 display: flex;
                 justify-content: center;
                 align-items: center;                   
@@ -150,6 +211,7 @@ body {
                 text-shadow: 0 5px 2px $color-two;
                 font-family: $font-familyOne;
                 margin-left: 0;
+                padding: 1rem;
                 
                 
                 h1 {
@@ -172,33 +234,55 @@ body {
                     @include mobile {
                         font-size: $fontSize-one;
                       }
+
+                      @include laptop {
+                        font-size: $fontSize-five ;
+                    }
                 }
 
                 @include mobile {
                     height: auto;
                     width: 225px;
                     transform: none;
-                    margin: 8px 8px 8px 0;
+                    margin: 8px 8px 8px 8px;
                 }
 
                 @include pt-tablet {
                     height: auto;
                     width: 225px;
                     transform: none;
-                    margin: 8px 8px 8px 0;
+                    margin: 8px 8px 8px 32px;
+                }
+
+                @include ls-tablet {
+                    transform: none;
+                    height: auto;
+                    width: 225px;
+                    margin: 8px 0 8px 8px;
+                }
+
+                @include laptop {
+                    height: 150px;
+                    width: auto;
+                    margin: 0;
+                }
+
+                @include lg-laptop {
+                    margin: 0;
+                    width: auto;
                 }
     
             }
             
+            // links
+
             ul {
                 width: 100%;
-                // padding: 0 5rem;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 list-style: none;
                 font-size: $fontSize-two;
-                margin-right: 6.5rem;
                 flex-grow: 1;
                 font-family: $font-familyThree;
                 gap: 105px;
@@ -207,7 +291,14 @@ body {
                     width: auto;
                     letter-spacing: $letter-spaceTwo;
                     padding: 2rem;
-                    
+
+                    @include laptop {
+                        padding: 1rem;
+                    }
+
+                    @include lg-laptop {
+                        padding: 1rem;
+                    }
                 }
 
                 a {
@@ -227,7 +318,29 @@ body {
                 @include pt-tablet {
                     display: none;
                 }
+
+                @include ls-tablet {
+                    display: none;
+                }
+
+                @include laptop {
+                    gap: 20px;
+                    display: flex;
+                    justify-content: center;
+                    font-size: $fontSize-one;
+                }
+
+                @include lg-laptop {
+                    gap: 85px;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 1rem 3rem 1rem 1rem;
+                    font-size: $fontSize-two;
+                }
+
             }
+
+            // Dropdown menu
 
             .navbar-bars {
                 display: none;
@@ -236,24 +349,53 @@ body {
                     display: flex;
                     justify-content: flex-end;
                     background-color: $color-two;
+                    padding-right: 0;
+                }
 
+                @include pt-tablet {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    background-color: $color-two;
+                    padding-right: 1rem;
+                }
+
+                @include ls-tablet {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding-right: .5rem;
+                    background-color: $color-two;
                 }
             }
 
             @include mobile {
-                margin-left: 8px;
+                margin: 0 8px;
             }
 
             @include pt-tablet {
-                margin-left: 8px;
+                margin: 0 8px;
             }
 
+            @include ls-tablet {
+                margin: 0 2rem;
+            }
+
+            @include laptop {
+                margin: 0 2.5rem;        
+            }
+
+            @include lg-laptop {
+                margin: 0 3rem;
+            }
             
         }
 
         @include mobile {
             height: 100px;
         } 
+
+        
     }
     
     

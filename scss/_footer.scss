@@ -20,12 +20,35 @@ footer {
             width: 100%;
         }
 
+        // opague background
         .footer-newsletter {
             background-color: $color-two;
             opacity: .7;
             position: absolute;
             height: 50%;
             width: 50%;
+
+            // Tablet view
+            @include pt-tablet {
+                height: 80%;
+                width: 85%;
+            }
+
+            @include ls-tablet {
+                height: 80%;
+                width: 80%;
+            }
+
+            // Laptop style
+            @include laptop {
+                height: 80%;
+                width: 75%;
+                padding: 1.5rem 0 3rem 0;
+            }
+
+            @include lg-laptop {
+                height: 60%;
+            }
         }
 
         .footer-info {
@@ -37,6 +60,18 @@ footer {
             justify-content: center;
             flex-direction: column;
             margin: 1rem;
+
+            // Tablet styles
+
+            @include pt-tablet {
+                height: auto;
+                width: 75%;
+            }
+
+            @include ls-tablet {
+                height: auto;
+                width: auto;
+            }
         }
         
 
@@ -54,7 +89,7 @@ footer {
             h1 {
                 width: 100%;
             }
-              
+
         }
     
         .footer-update {
@@ -66,6 +101,23 @@ footer {
             // height: 100%;
             width: auto;  
             padding: .5rem 0 2.5rem 0;
+
+            // Tablet view
+            @include pt-tablet {
+                text-align: center;
+            }
+
+            @include ls-tablet {
+                text-align: center;
+                font-size: $fontSize-five;
+            }
+
+            // Laptop style
+            @include laptop {
+                text-align: center;
+            }
+
+            
         }
     
         .footer-link {
@@ -93,6 +145,8 @@ footer {
                 transform: scale(1.1);
             }
         }
+
+        // Mobile view footer
 
         @include mobile {
             height: 100%;
@@ -130,13 +184,44 @@ footer {
                     padding: .5rem 5.5rem;
                 }
             }
+        }
 
+        // Tablet view Styles
+
+        @include pt-tablet {
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        @include ls-tablet {
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 
     @include mobile {
-        height: 550px;
+        height: 525px;
         padding: 1rem 0 2.5rem 0;
     }
+
+    @include pt-tablet {
+        height: 500px;
+        padding: 1.5rem 0;
+    }
+    @include ls-tablet {
+        height: 450px;
+        padding: 1.5rem 0 3rem 0;
+    }
+
+    
     
 }
